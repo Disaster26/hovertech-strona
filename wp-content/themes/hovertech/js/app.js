@@ -31,7 +31,7 @@
   if (hero && hero.querySelectorAll('.slide').length > 1) {
     var wszystkie = $$('.slide', hero), wszDots = $$('.hero-kropki button', hero), slides, dots;
     var zestaw = function () {
-      var mob = window.innerWidth <= 760;
+      var mob = window.matchMedia('(max-width:760px)').matches; /* 1.2: bez odczytu układu przy starcie */
       slides = wszystkie.filter(function (s) { return mob || !s.classList.contains('tylko-mob'); });
       dots = wszDots.filter(function (d) { return mob || !d.classList.contains('tylko-mob'); });
     };
@@ -67,7 +67,7 @@
     });
     hero.addEventListener('pointercancel', function () { sx = null; });
     document.addEventListener('visibilitychange', function () { if (document.hidden) stop(); else start(); });
-    window.addEventListener('load', function () { laduj(1); start(); });
+    window.addEventListener('load', function () { setTimeout(function () { laduj(1); }, 2500); start(); }); /* 1.2: drugie zdjęcie po chwili, nie w trakcie ładowania pierwszego ekranu */
   }
 
   /* ---------- karuzele: palec, mysz, strzałki, licznik ---------- */
@@ -114,7 +114,7 @@
     tor.addEventListener('pointercancel', koniec);
     tor.addEventListener('click', function (e) { if (ruch) { e.preventDefault(); e.stopPropagation(); ruch = false; } }, true);
     window.addEventListener('resize', odswiez);
-    odswiez();
+    window.requestAnimationFrame(function () { setTimeout(odswiez, 0); }); /* 1.2: licznik po pierwszym malowaniu, bez wymuszonego przeliczenia układu */
   });
 
   /* ---------- filmy: YouTube dopiero po kliknięciu ---------- */
