@@ -4,7 +4,7 @@ Theme URI: https://hovertech.com.pl/
 Author: Wylinka
 Author URI: https://wylinka.pl/
 Description: Lekki motyw strony HOVERTECH S.A. (poduszkowce HT-P400 Anaconda, wentylatory HT-WV 1000 TORNADO). Teksty w edytorze stron, aktualności we Wpisach, dane firmy i YouTube w Wygląd > Dostosuj. Bez page buildera.
-Version: 1.0.0
+Version: 1.1.0
 Requires at least: 6.4
 Requires PHP: 7.4
 License: GNU General Public License v2 or later
@@ -179,10 +179,10 @@ p{margin:0 0 1em}
 .anaconda{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,1fr);gap:clamp(32px,5vw,72px);align-items:center}
 .car-duzy{border-radius:var(--r);aspect-ratio:4/3;background:#30363b}
 .anaconda-lead{font-size:18px;margin:16px 0 28px;color:#D3D7DB}
-.parametry{display:grid;grid-template-columns:1fr 1fr;margin:0;border-top:1px solid rgba(255,255,255,.14)}
-.parametry div{padding:14px 16px 14px 0;border-bottom:1px solid rgba(255,255,255,.14)}
-.parametry dt{font-size:14px;color:#9AA2AA;margin-bottom:3px}
-.parametry dd{margin:0;font:600 18px/1.35 var(--fh);color:#fff}
+.parametry{width:100%;border-collapse:collapse;margin:0;border-top:1px solid rgba(255,255,255,.16)}
+.parametry th,.parametry td{padding:13px 0;border-bottom:1px solid rgba(255,255,255,.16);text-align:left;vertical-align:baseline}
+.parametry th{font:400 15px/1.4 var(--fb);color:#A3ABB3;padding-right:24px;width:50%}
+.parametry td{font:600 18px/1.35 var(--fh);color:#fff}
 .anaconda-akcje{display:flex;align-items:center;gap:24px;flex-wrap:wrap;margin:30px 0 0}
 .link-jasny{color:#fff;font-weight:500;text-decoration:underline;text-underline-offset:4px;text-decoration-color:rgba(255,255,255,.4)}
 .opcje{font-size:15px;color:#A9B0B7;margin:26px 0 0;line-height:1.6}
@@ -255,6 +255,7 @@ p{margin:0 0 1em}
 .firma{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:clamp(32px,6vw,96px)}
 .firma-tx h2{margin-bottom:20px}
 .firma-tx .btn{margin-top:8px}
+.tresc ul.przeznaczenie{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:4px 32px;margin:20px 0 8px}
 ul.firma-lista{list-style:none;margin:0;padding:0;align-self:center}
 ul.firma-lista li{padding:16px 0;border-bottom:1px solid #CCD2D7;color:var(--mut);font-size:16px;margin:0}
 ul.firma-lista li::before{display:none}
@@ -295,7 +296,7 @@ ul.firma-lista strong{color:var(--ink);font-weight:600}
 .urz-tel{font:700 19px/1 var(--fh);color:var(--ink);text-decoration:none}
 .urz-tel:hover{color:var(--red)}
 .urz-dane-in{display:grid;grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr);gap:clamp(28px,5vw,72px)}
-.urz-dane .parametry{grid-template-columns:repeat(2,minmax(0,1fr))}
+.urz-dane-h p{margin:14px 0 0;color:#A3ABB3;font-size:16px}
 .dokumenty{list-style:none;margin:24px 0 0;padding:0;display:grid;gap:12px}
 .dokumenty a{display:flex;align-items:center;gap:12px;color:#fff;text-decoration:none;font-weight:600;padding:14px 16px;border:1px solid rgba(255,255,255,.22);border-radius:8px;transition:border-color .15s,background .15s}
 .dokumenty a::before{content:"PDF";font:700 11px/1 var(--fb);letter-spacing:.06em;background:var(--red);color:#fff;padding:5px 6px;border-radius:4px;flex:none}
@@ -518,9 +519,9 @@ ul.firma-lista strong{color:var(--ink);font-weight:600}
   .urz-male>.urz-karta:only-child .urz-tx{padding:20px 20px 22px}
   .teren::-webkit-scrollbar{display:none}
   .teren-el{flex:0 0 82%;scroll-snap-align:start}
-  .parametry,.urz-dane .parametry{grid-template-columns:1fr 1fr}
-  .parametry dd{font-size:16px}
-  .parametry div{padding:12px 10px 12px 0}
+  .parametry th{font-size:14px;padding-right:14px}
+  .parametry td{font-size:16px}
+  .parametry th,.parametry td{padding-top:11px;padding-bottom:11px}
   .anaconda-akcje{gap:16px}
   .anaconda-akcje .btn{width:100%}
   .car-dok .car-tor>*{flex-basis:62%;margin-right:12px}
@@ -552,7 +553,7 @@ ul.firma-lista strong{color:var(--ink);font-weight:600}
 }
 @media (max-width:380px){
   .logo img{height:32px}
-  .parametry,.urz-dane .parametry{grid-template-columns:1fr}
+  .parametry th{font-size:13.5px}
 }
 @media (max-width:782px){.admin-bar .top{top:46px}}
 
