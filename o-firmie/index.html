@@ -149,6 +149,23 @@ p{margin:0 0 1em}
 .car-btn[disabled]{opacity:0!important;pointer-events:none}
 @media (hover:none){.car-btn{display:none}}
 .car-tresc{border-radius:var(--r);aspect-ratio:3/2;margin:28px 0}
+.car-tresc .car-tor{cursor:zoom-in}
+.car-tresc.ciag .car-tor{cursor:grabbing}
+/* 1.3.1 powiększenie zdjęć galerii */
+html.lb-otw{overflow:hidden}
+.lb{position:fixed;inset:0;z-index:1000;background:rgba(12,14,16,.98);display:flex;align-items:center;justify-content:center;padding:60px 72px 28px;touch-action:none}
+.lb[hidden]{display:none}
+.lb-fig{margin:0;display:flex;flex-direction:column;align-items:center;max-width:100%}
+.lb-img{display:block;max-width:100%;max-height:calc(100vh - 130px);max-height:calc(100dvh - 130px);width:auto;height:auto;border-radius:4px;user-select:none;-webkit-user-drag:none}
+.lb-nr{color:#fff;font:600 14px/1 var(--fb);margin-top:14px}
+.lb-x,.lb-btn{position:absolute;border:0;border-radius:50%;cursor:pointer;display:grid;place-items:center;width:46px;height:46px}
+.lb-x{top:10px;right:10px;background:rgba(255,255,255,.14);color:#fff}
+.lb-x svg,.lb-btn svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2.4}
+.lb-btn{top:50%;transform:translateY(-50%);background:rgba(255,255,255,.92);color:var(--ink)}
+.lb-btn.l{left:14px}.lb-btn.p{right:14px}
+.lb-btn[disabled]{visibility:hidden}
+.lb-x:focus-visible,.lb-btn:focus-visible{outline:3px solid #fff;outline-offset:3px}
+@media (hover:none),(max-width:760px){.lb{padding:60px 0 24px}.lb-btn{display:none}.lb-img{max-height:calc(100vh - 120px);max-height:calc(100dvh - 120px)}}
 
 /* urządzenia: karty */
 .urz{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
