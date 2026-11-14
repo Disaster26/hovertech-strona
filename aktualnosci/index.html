@@ -149,6 +149,23 @@ p{margin:0 0 1em}
 .car-btn[disabled]{opacity:0!important;pointer-events:none}
 @media (hover:none){.car-btn{display:none}}
 .car-tresc{border-radius:var(--r);aspect-ratio:3/2;margin:28px 0}
+.car-tresc .car-tor{cursor:zoom-in}
+.car-tresc.ciag .car-tor{cursor:grabbing}
+/* 1.3.1 powiększenie zdjęć galerii */
+html.lb-otw{overflow:hidden}
+.lb{position:fixed;inset:0;z-index:1000;background:rgba(12,14,16,.98);display:flex;align-items:center;justify-content:center;padding:60px 72px 28px;touch-action:none}
+.lb[hidden]{display:none}
+.lb-fig{margin:0;display:flex;flex-direction:column;align-items:center;max-width:100%}
+.lb-img{display:block;max-width:100%;max-height:calc(100vh - 130px);max-height:calc(100dvh - 130px);width:auto;height:auto;border-radius:4px;user-select:none;-webkit-user-drag:none}
+.lb-nr{color:#fff;font:600 14px/1 var(--fb);margin-top:14px}
+.lb-x,.lb-btn{position:absolute;border:0;border-radius:50%;cursor:pointer;display:grid;place-items:center;width:46px;height:46px}
+.lb-x{top:10px;right:10px;background:rgba(255,255,255,.14);color:#fff}
+.lb-x svg,.lb-btn svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2.4}
+.lb-btn{top:50%;transform:translateY(-50%);background:rgba(255,255,255,.92);color:var(--ink)}
+.lb-btn.l{left:14px}.lb-btn.p{right:14px}
+.lb-btn[disabled]{visibility:hidden}
+.lb-x:focus-visible,.lb-btn:focus-visible{outline:3px solid #fff;outline-offset:3px}
+@media (hover:none),(max-width:760px){.lb{padding:60px 0 24px}.lb-btn{display:none}.lb-img{max-height:calc(100vh - 120px);max-height:calc(100dvh - 120px)}}
 
 /* urządzenia: karty */
 .urz{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
@@ -626,6 +643,33 @@ ul.firma-lista strong{color:var(--ink);font-weight:600}
 	<div class="wrap">
 					<div class="wpisy">
 				<article class="wpis-karta">
+	<a class="wpis-foto" href="https://disaster26.github.io/hovertech-strona/aktualnosci/poland-boat-show-2026/" tabindex="-1" aria-hidden="true">
+		<img width="900" height="600" src="https://disaster26.github.io/hovertech-strona/wp-content/uploads/2026/11/poland-boat-show-2026-01-2-900x600.webp" class="attachment-ht-karta size-ht-karta wp-post-image" alt="" sizes="(max-width: 760px) 100vw, (max-width: 1240px) 50vw, 400px" loading="lazy" decoding="async" srcset="https://disaster26.github.io/hovertech-strona/wp-content/uploads/2026/11/poland-boat-show-2026-01-2-900x600.webp 900w, https://disaster26.github.io/hovertech-strona/wp-content/uploads/2026/11/poland-boat-show-2026-01-2-480x320.webp 480w, https://disaster26.github.io/hovertech-strona/wp-content/uploads/2026/11/poland-boat-show-2026-01-2-660x440.webp 660w" />	</a>
+	<div class="wpis-tx">
+		<p class="wpis-data"><time datetime="2026-10">Październik 2026</time></p>
+		<h3><a href="https://disaster26.github.io/hovertech-strona/aktualnosci/poland-boat-show-2026/">Udział w targach Poland Boat Show 2026</a></h3>
+		<p>Podczas targów Poland Boat Show 2026 (8-11 października, Ptak Warsaw Expo, stoisko F5.21a) zaprezentowaliśmy poduszkowiec HT-P400 Anaconda.</p>
+	</div>
+</article>
+<article class="wpis-karta">
+	<a class="wpis-foto" href="https://disaster26.github.io/hovertech-strona/aktualnosci/festiwal-wisly-torun-2026/" tabindex="-1" aria-hidden="true">
+		<img width="900" height="600" src="https://disaster26.github.io/hovertech-strona/wp-content/uploads/2026/11/festiwal-wisly-torun-2026-01-900x600.webp" class="attachment-ht-karta size-ht-karta wp-post-image" alt="" sizes="(max-width: 760px) 100vw, (max-width: 1240px) 50vw, 400px" loading="lazy" decoding="async" srcset="https://disaster26.github.io/hovertech-strona/wp-content/uploads/2026/11/festiwal-wisly-torun-2026-01-900x600.webp 900w, https://disaster26.github.io/hovertech-strona/wp-content/uploads/2026/11/festiwal-wisly-torun-2026-01-300x200.webp 300w, https://disaster26.github.io/hovertech-strona/wp-content/uploads/2026/11/festiwal-wisly-torun-2026-01-1024x684.webp 1024w, https://disaster26.github.io/hovertech-strona/wp-content/uploads/2026/11/festiwal-wisly-torun-2026-01-768x513.webp 768w, https://disaster26.github.io/hovertech-strona/wp-content/uploads/2026/11/festiwal-wisly-torun-2026-01-360x241.webp 360w, https://disaster26.github.io/hovertech-strona/wp-content/uploads/2026/11/festiwal-wisly-torun-2026-01-540x361.webp 540w, https://disaster26.github.io/hovertech-strona/wp-content/uploads/2026/11/festiwal-wisly-torun-2026-01-720x481.webp 720w, https://disaster26.github.io/hovertech-strona/wp-content/uploads/2026/11/festiwal-wisly-torun-2026-01-960x641.webp 960w, https://disaster26.github.io/hovertech-strona/wp-content/uploads/2026/11/festiwal-wisly-torun-2026-01-480x320.webp 480w, https://disaster26.github.io/hovertech-strona/wp-content/uploads/2026/11/festiwal-wisly-torun-2026-01-660x440.webp 660w, https://disaster26.github.io/hovertech-strona/wp-content/uploads/2026/11/festiwal-wisly-torun-2026-01.webp 1320w" />	</a>
+	<div class="wpis-tx">
+		<p class="wpis-data"><time datetime="2026-08">Sierpień 2026</time></p>
+		<h3><a href="https://disaster26.github.io/hovertech-strona/aktualnosci/festiwal-wisly-torun-2026/">Udział w Festiwalu Wisły w Toruniu</a></h3>
+		<p>Festiwal Wisły w Toruniu, 13-15 sierpnia 2026: pokaz poduszkowca HT-P400 Anaconda dla toruńskiego WOPR. Ratownicy przetestowali go w praktyce.</p>
+	</div>
+</article>
+<article class="wpis-karta">
+	<a class="wpis-foto" href="https://disaster26.github.io/hovertech-strona/aktualnosci/zlot-pojazdow-sluzb-mundurowych-otmuchow-2026/" tabindex="-1" aria-hidden="true">
+		<img width="875" height="600" src="https://disaster26.github.io/hovertech-strona/wp-content/uploads/2026/11/zlot-pojazdow-sluzb-mundurowych-otmuchow-2026-01-875x600.webp" class="attachment-ht-karta size-ht-karta wp-post-image" alt="" sizes="(max-width: 760px) 100vw, (max-width: 1240px) 50vw, 400px" loading="lazy" decoding="async" />	</a>
+	<div class="wpis-tx">
+		<p class="wpis-data"><time datetime="2026-08">Sierpień 2026</time></p>
+		<h3><a href="https://disaster26.github.io/hovertech-strona/aktualnosci/zlot-pojazdow-sluzb-mundurowych-otmuchow-2026/">Udział w Zlocie Pojazdów Służb Mundurowych w Otmuchowie</a></h3>
+		<p>8 sierpnia 2026, V Międzynarodowy Zlot Pojazdów Służb Mundurowych „Na Bombach!”: HT-P400 Anaconda na Rynku i w akcji na Zalewie w Otmuchowie.</p>
+	</div>
+</article>
+<article class="wpis-karta">
 	<a class="wpis-foto" href="https://disaster26.github.io/hovertech-strona/aktualnosci/poduszkowce-hovertech-w-slizgu/" tabindex="-1" aria-hidden="true">
 		<img width="900" height="600" src="https://disaster26.github.io/hovertech-strona/wp-content/uploads/2026/11/anaconda-dwa-900x600.webp" class="attachment-ht-karta size-ht-karta wp-post-image" alt="" sizes="(max-width: 760px) 100vw, (max-width: 1240px) 50vw, 400px" loading="lazy" decoding="async" srcset="https://disaster26.github.io/hovertech-strona/wp-content/uploads/2026/11/anaconda-dwa-900x600.webp 900w, https://disaster26.github.io/hovertech-strona/wp-content/uploads/2026/11/anaconda-dwa-300x200.webp 300w, https://disaster26.github.io/hovertech-strona/wp-content/uploads/2026/11/anaconda-dwa-1024x682.webp 1024w, https://disaster26.github.io/hovertech-strona/wp-content/uploads/2026/11/anaconda-dwa-768x512.webp 768w, https://disaster26.github.io/hovertech-strona/wp-content/uploads/2026/11/anaconda-dwa-1536x1024.webp 1536w, https://disaster26.github.io/hovertech-strona/wp-content/uploads/2026/11/anaconda-dwa-1600x1066.webp 1600w, https://disaster26.github.io/hovertech-strona/wp-content/uploads/2026/11/anaconda-dwa-360x240.webp 360w, https://disaster26.github.io/hovertech-strona/wp-content/uploads/2026/11/anaconda-dwa-540x360.webp 540w, https://disaster26.github.io/hovertech-strona/wp-content/uploads/2026/11/anaconda-dwa-720x480.webp 720w, https://disaster26.github.io/hovertech-strona/wp-content/uploads/2026/11/anaconda-dwa-960x640.webp 960w, https://disaster26.github.io/hovertech-strona/wp-content/uploads/2026/11/anaconda-dwa-480x320.webp 480w, https://disaster26.github.io/hovertech-strona/wp-content/uploads/2026/11/anaconda-dwa-660x440.webp 660w, https://disaster26.github.io/hovertech-strona/wp-content/uploads/2026/11/anaconda-dwa.webp 2000w" />	</a>
 	<div class="wpis-tx">
